@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="Description" content="..." />
+<meta name="Keywords" content="..." />
+<meta name="robots" content="all,follow" />
+<meta name="author" content="..." />
+<meta name="copyright" content="Mantis-a [http://www.mantisa.cz/]" />
+
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/style-ie.css" media="screen, projection, tv" /><![endif]-->
+<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<title>Web-technologies</title>
+<style type="text/css">
+	.navbar {
+    overflow: hidden;
+    background-color: #003B69;////////////////////////////
+    font-family: Times new roman, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #005AA1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+
+<div id="Clouds">
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Foreground"></div>
+</div>
+<div id="main">
+
+	<!-- Header -->
+	<div id="header">
+		<div id="header-in">
+			<ul id="navigation">
+				<li id="house"><a href="project.html">Главная</a></li>
+		</ul>
+
+		<h1>&nbsp; Web-технологии в информационных системах</h1>
+
+			<h2>Создание динамических web-ресурсов с элементами программирования</h2>
+
+
+	
+		</div>
+	</div>
+	<!-- Header end -->
+	
+	<!-- Menu -->
+<div class="navbar">
+  <a href="CSS.html">CSS</a>
+  <a href="JS.html">JavaScript</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()"><strong>Другое</strong>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="t1.html"><i>Публикация web-ресурсов в сети интернет</i></a>
+      <a href="t2.html"><i>Создание сайта на базе системы управления контентом</i></a>
+    </div>
+  </div> 
+</div>
+	
+
+
+
+	<!-- Menu end -->
+	
+<hr class="noscreen" />
+
+<div id="skip-menu"></div>
+	
+	<div id="content">
+	
+		<!-- Content box with white background and gray border -->
+		<div id="content-box">
+		
+			<!-- Left column -->
+			<div id="content-box-in-left">
+				<div id="content-box-in-left-in">
+					<h3>Связанные стили</h3>
+						<p>При использовании связанных стилей описание селекторов и их значений располагается в отдельном файле с расширением .css, а для связывания документа с этим файлом применяется тег
+						link. Данный тег помещается в контейнер head.</p>
+						<img  src="img/1.png" height="200" alt="1"/>
+						<p>Значение атрибута тега link — rel остаётся постоянным. Значение href указывает путь к CSSфайлу, он может быть задан как относительно, так и абсолютно. Таким образом, существует возможность подключить таблицу стилей, которая находится на другом домене.
+						Содержимое файла main.css, подключенного с помощью тега link, приведено на риcунке</p>
+						<div class="cleaner">&nbsp;</div>
+						<img  src="img/2.png"  height="150 " alt="2"/>
+						<p>Файл со стилем не хранит никаких данных, кроме синтаксиса CSS, а HTML-документ содержит
+						только ссылку на файл со стилем. Таким способом реализован принцип разделения кода и оформления сайта. Использование связанных стилей является наиболее универсальным и удобным методом добавления стиля на сайт. Ведь стили хранятся в одном файле, а в HTML-документах указывается только ссылка на него.</p>
+						<h3>Глобальные стили</h3>
+						<p>При использовании глобальных стилей свойства CSS описываются в самом документе и располагаются в заголовке WEB-страницы. По гибкости и возможностям этот способ добавления стиля
+						уступает связанному, но этот способ также позволяет хранить стили в одном месте, в данном случае
+						прямо на той же странице с помощью контейнера style</p>
+						<img src="img/3.png"  height="230" alt="3"/>
+						<p>На практике данный способ используют очень редко и только в исключительных случаях.</p>
+						<h3>Внутренние стили</h3>
+						<p>Внутренний стиль является расширением для одиночного тега, используемого на текущей WEBстранице. Для определения стиля используется атрибут style, а его значением выступает набор стилевых правил</p>
+						<img src="img/4.png" height="230" alt="4"/>
+						<p>Внутренние стили рекомендовано применять ограниченно или лучше вообще отказаться от их
+						использования. Использование таких стилей увеличивает общий объём файлов, что, в свою очередь,
+						ведет к увеличению времени загрузки страницы в браузере, а также усложняет внесение изменений.</p>
+						<p>Все описанные методы использования CSS могут быть применены в сочетании друг с другом, но
+						в этом случае необходимо помнить об их иерархии. Первым имеет приоритет внутренний стиль, затем глобальный стиль и в последнюю очередь связанный стиль.</p>
+						<h3>Импорт CSS</h3>
+						<p>vЕсли у вас уже есть готовый CSS-файл с описанными стилями, то, чтобы не копировать код, можно импортировать содержимое CSS-файла с помощью команды @import.</p>
+						<img src="img/5.png"  height="230" alt="5"/>
+						<p>Этот метод допускается использовать совместно со связанными или глобальными стилями, но
+						нельзя использовать с внутренними стилями. </p>
+						<p>Пример синтаксиса:</p>
+						<p>@import url(«имя файла»);</p>
+						<p>@import «имя файла»;</p>
+						<p>После ключевого слова @import указывается путь к стилевому файлу одним из двух приведенных способов — с помощью url или без него. На рис. 7 и 8 показано, как можно импортировать стили.</p>
+						<img src="img/6.png" height="230" alt="6"/>
+
+				</div>
+			</div>
+
+
+<hr class="noscreen" />
+			
+			<!-- Right column -->
+			<div id="content-box-in-right">
+				<div id="content-box-in-right-in">
+					<h3>Содержание курса</h3>
+						<dl>
+							<dt>Практическая работа 1</dt>
+								<dd>Основы работы в сети Интернет</dd>
+								
+							<dt>Практическая работа 2</dt>
+								<dd>Создание WEB-ресурсов на языке разметки HTML. </dd>
+								
+							<dt>Практическая работа 3</dt>
+								<dd>Создание динамических WEB-ресурсов с элементами программирования.</dd>
+								
+							<dt>Практическая работа 4</dt>
+								<dd>WEB-анимация.</dd>
+
+							<dt>Практическая работа 5</dt>
+								<dd>Публикация WEB-ресурсов.</dd>
+
+							<dt>Практическая работа 6</dt>
+								<dd>Основы безопасной работы в сети Интернет.</dd>
+
+							<dt>Практическая работа 7</dt>
+								<dd>Создание сайта на базе CMS.</dd>
+						</dl>
+			<h3>Об авторе</h3>
+				<address>
+				<strong>Выполнила:</strong><br />
+						Студентка ЭУИС 4-4<br />
+						Маршавина Яна Игоревна<br />
+						<strong>Контактная информация:</strong><br />
+						E-mail: vita.nova@mail.ru<br />
+						Телефон: 8-999-666-77-88<br />
+
+				</address>
+			</div>
+			</div>
+			<div class="cleaner">&nbsp;</div>
+			<!-- Right column end -->
+		</div>
+		<!-- Content box with white background and gray border end -->
+	</div>
+
+<hr class="noscreen" />
+	
+	<!-- Footer -->
+	<div id="footer">
+		<div id="footer-in">
+
+			<p class="footer-right">Web-технологии в информационных системах, 2020.</p>
+		</div>
+	</div>
+	<!-- Footer end -->
+
+</div>
+
+<script type = "text/javascript">
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+</body>
+</html>

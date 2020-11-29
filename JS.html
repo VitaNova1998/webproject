@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="Description" content="..." />
+<meta name="Keywords" content="..." />
+<meta name="robots" content="all,follow" />
+<meta name="author" content="..." />
+<meta name="copyright" content="Mantis-a [http://www.mantisa.cz/]" />
+
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/style-ie.css" media="screen, projection, tv" /><![endif]-->
+<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<title>Web-technologies</title>
+<style type="text/css">
+	.navbar {
+    overflow: hidden;
+    background-color: #003B69;////////////////////////////
+    font-family: Times new roman, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #005AA1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+
+<div id="Clouds">
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Foreground"></div>
+</div>
+<div id="main">
+
+	<!-- Header -->
+	<div id="header">
+		<div id="header-in">
+			<ul id="navigation">
+				<li id="house"><a href="project.html">Главная</a></li>
+		</ul>
+
+		<h1>&nbsp; Web-технологии в информационных системах</h1>
+
+			<h2>Создание динамических web-ресурсов с элементами программирования</h2>
+
+
+	
+		</div>
+	</div>
+	<!-- Header end -->
+	
+	<!-- Menu -->
+<div class="navbar">
+  <a href="CSS.html">CSS</a>
+  <a href="JS.html">JavaScript</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()"><strong>Другое</strong>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="t1.html"><i>Публикация web-ресурсов в сети интернет</i></a>
+      <a href="t2.html"><i>Создание сайта на базе системы управления контентом</i></a>
+    </div>
+  </div> 
+</div>
+	
+
+
+
+	<!-- Menu end -->
+	
+<hr class="noscreen" />
+
+<div id="skip-menu"></div>
+	
+	<div id="content">
+	
+		<!-- Content box with white background and gray border -->
+		<div id="content-box">
+		
+			<!-- Left column -->
+			<div id="content-box-in-left">
+				<div id="content-box-in-left-in">
+					<h3>JavaScript</h3>
+						<p>JavaScript проектировался для того, чтобы сделать WEB-ресурсы «живыми». Программы на этом
+						языке называются скриптами. В браузере они подключаются напрямую к HTML и, как только загружается страница, тут же выполняются.</p>
+						<p>Программы на JavaScript — обычный текст, они не требуют специальной подготовки. В этом
+						плане JavaScript сильно отличается от Java.</p>
+						<p>JavaScript может выполняться не только в браузере, а где угодно, нужна лишь специальная программа — интерпретатор. Процесс выполнения скрипта называют «интерпретацией».
+						Для выполнения программ на любом языке существуют два способа: «компиляция» и «интерпретация».</p>
+						<p>Компиляция — это преобразование исходного кода программы при помощи специального инструмента, другой программы — «компилятора» — в другой язык, как правило в машинный код.
+						Этот машинный код затем распространяется и запускается. При этом исходный код программы остаётся у разработчика.</p>
+						<p>Интерпретация — это выполнение исходного кода программы другим инструментом — «интерпретатором» — «как есть». При этом распространяется именно сам исходный код (скрипт). Этот
+						подход применяется в браузерах для JavaScript.</p>
+						<p>Современные интерпретаторы перед выполнением преобразуют JavaScript в машинный код или
+						близко к нему, оптимизируют, а уже затем выполняют. И даже во время выполнения стараются оптимизировать. Поэтому JavaScript работает очень быстро.</p>
+						<p>Во все основные браузеры встроен интерпретатор JavaScript, именно поэтому они могут выполнять скрипты на странице. Разумеется, JavaScript можно использовать не только в браузере. Это
+						полноценный язык, программы на котором можно запускать и на сервере, если установлен соответствующий интерпретатор.</p>
+						<p>Современный JavaScript — это «безопасный» язык программирования общего назначения. Он не
+						предоставляет низкоуровневых средств работы с памятью, процессором.
+						Остальные возможности зависят от окружения, в котором запущен JavaScript.</p> 
+						<p>В браузере JavaScript умеет делать всё, что относится к манипуляции со страницей, взаимодействию с посетителем и, в какой-то мере, с сервером: </p>
+						<p>• создавать новые HTML-теги, удалять существующие, менять стили элементов, прятать, показывать элементы и т.п.; </p>
+						<p>• реагировать на действия посетителя, обрабатывать клики мыши, перемещения курсора, нажатия на клавиатуру и т.п.; </p>
+						<p>• посылать запросы на сервер и загружать данные без перезагрузки страницы (с помощью AJAX); </p>
+						<p>• получать и устанавливать cookies, запрашивать данные, выводить сообщения.</p>
+						<p>JavaScript — быстрый и мощный язык, но браузер накладывает на его исполнение некоторые
+						ограничения.</p>
+						<p>Это сделано для безопасности пользователей, чтобы злоумышленник не мог с помощью JavaScript
+						получить личные данные или как-то навредить компьютеру пользователя.</p>
+						<p>Этих ограничений нет там, где JavaScript используется вне браузера, например на сервере.
+						Большинство возможностей JavaScript в браузере ограничено текущим окном и страницей.
+						JavaScript не может читать/записывать произвольные файлы на жесткий диск, копировать их или
+						вызывать программы. Он не имеет прямого доступа к операционной системе.</p>
+						<p>Cовременные браузеры могут работать с файлами, но эта возможность ограничена специально
+						выделенной директорией — «песочницей». JavaScript, работающий в одной вкладке, не может общаться с другими вкладками и окнами, за исключением случая, когда он сам открыл это окно или
+						несколько вкладок из одного источника (одинаковый домен, порт, протокол).</p>
+						<p>Основные особенности JavaScript: </p>
+						<p>• полная интеграция с HTML/CSS;</p> 
+						<p>• поддерживается всеми распространёнными браузерами и включён по умолчанию.</p>
+						<p>Программы на языке JavaScript можно вставить в любое место HTML при помощи тега SCRIPT,
+						например, как это указано на рисунке</p>
+						<img src="img/7.png"  height="300" alt="7"/>
+				</div>
+			</div>
+
+
+<hr class="noscreen" />
+			
+			<!-- Right column -->
+			<div id="content-box-in-right">
+				<div id="content-box-in-right-in">
+					<h3>Содержание курса</h3>
+						<dl>
+							<dt>Практическая работа 1</dt>
+								<dd>Основы работы в сети Интернет</dd>
+								
+							<dt>Практическая работа 2</dt>
+								<dd>Создание WEB-ресурсов на языке разметки HTML. </dd>
+								
+							<dt>Практическая работа 3</dt>
+								<dd>Создание динамических WEB-ресурсов с элементами программирования.</dd>
+								
+							<dt>Практическая работа 4</dt>
+								<dd>WEB-анимация.</dd>
+
+							<dt>Практическая работа 5</dt>
+								<dd>Публикация WEB-ресурсов.</dd>
+
+							<dt>Практическая работа 6</dt>
+								<dd>Основы безопасной работы в сети Интернет.</dd>
+
+							<dt>Практическая работа 7</dt>
+								<dd>Создание сайта на базе CMS.</dd>
+						</dl>
+			<h3>Об авторе</h3>
+				<address>
+				<strong>Выполнила:</strong><br />
+						Студентка ЭУИС 4-4<br />
+						Маршавина Яна Игоревна<br />
+						<strong>Контактная информация:</strong><br />
+						E-mail: vita.nova@mail.ru<br />
+						Телефон: 8-999-666-77-88<br />
+
+				</address>
+			</div>
+			</div>
+			<div class="cleaner">&nbsp;</div>
+			<!-- Right column end -->
+		</div>
+		<!-- Content box with white background and gray border end -->
+	</div>
+
+<hr class="noscreen" />
+	
+	<!-- Footer -->
+	<div id="footer">
+		<div id="footer-in">
+
+			<p class="footer-right">Web-технологии в информационных системах, 2020.</p>
+		</div>
+	</div>
+	<!-- Footer end -->
+
+</div>
+
+<script type = "text/javascript">
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+</body>
+</html>
